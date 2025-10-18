@@ -2,6 +2,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import '../../shared_prefrences/languages/language_service.dart';
+import '../../shared_prefrences/theme/theme_service.dart';
 import '../../shared_prefrences/token_services_shareprefrence/token_services_shareprefrence.dart';
 import '../home/home_screen.dart';
 import '../profile/profile_screen.dart';
@@ -30,9 +31,15 @@ class _MainScreenState extends State<MainScreen> {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.blueAccent,
-        leading: Icon(Icons.person),
         automaticallyImplyLeading: false,
+        title: Text('welcome'.tr),
         actions: [
+          IconButton(
+            icon: Icon(Get.isDarkMode ? Icons.light_mode : Icons.dark_mode),
+            onPressed: () async {
+              await ThemeService().switchTheme();
+            },
+          ),
           PopupMenuButton(
             icon: const Icon(Icons.language),
             onSelected: (value) {

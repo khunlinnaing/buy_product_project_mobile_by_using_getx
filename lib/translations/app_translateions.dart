@@ -4,7 +4,7 @@ class AppTranslations extends Translations {
   @override
   Map<String, Map<String, String>> get keys => {
     'en_US': {
-      'app_name': 'Shan Tea Mobile',
+      'app_name': 'Hello and Welcome to this app',
       'login': 'Login',
       'logout': 'Logout',
       'email': 'Email or Account',
@@ -85,9 +85,12 @@ class AppTranslations extends Translations {
       'no_user': "No user.",
       'edit_purchase': "Edit Purchase",
       'edit_sale': "Edit Sale",
+      'welcome': "Welcome To My App",
+      'save': "Save",
+      'update': "Update",
     },
     'my_MM': {
-      'app_name': 'ရှမ်းတီ မိုဘိုင်း',
+      'app_name': 'မင်္ဂလာပါ ဤအက်ပ်မှကြိုဆိုပါသည်။',
       'login': 'လော့ဂ်အင်',
       'logout': 'လော့ဂ်အာက်',
       'email': 'အီးမေးလ် သို့မဟုတ် အကောင့်',
@@ -170,6 +173,9 @@ class AppTranslations extends Translations {
       'no_user': "အသုံးပြုသူမရှိပါ။",
       'edit_purchase': "ဝယ်ယူမှုကို တည်းဖြတ်ပါ။",
       'edit_sale': "ရောင်းရန် တည်းဖြတ်ပါ။",
+      'welcome': "ကျွန်ုပ်၏အက်ပ်မှကြိုဆိုပါသည်။",
+      'save': "သိမ်းဆည်းမည်။",
+      'update': "မွမ်းမံမည်။",
     },
   };
 }

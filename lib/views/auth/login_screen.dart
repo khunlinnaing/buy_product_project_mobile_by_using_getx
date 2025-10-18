@@ -22,8 +22,8 @@ class LoginScreen extends StatelessWidget {
             children: [
               SizedBox(height: MediaQuery.of(context).size.height * 0.15),
               CircleAvatar(
-                radius: mediaWidth * 0.08,
-                child: const Text("Logo"),
+                radius: mediaWidth * 0.2,
+                backgroundImage: AssetImage("assets/images/icon.png"),
               ),
               const SizedBox(height: 40),
               Text(
@@ -117,14 +117,14 @@ class LoginScreen extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 30),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  Text("dont_have_account".tr),
-                  Text("forget_password".tr),
-                ],
-              ),
-              const SizedBox(height: 40),
+              // Row(
+              //   mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              //   children: [
+              //     Text("dont_have_account".tr),
+              //     Text("forget_password".tr),
+              //   ],
+              // ),
+              // const SizedBox(height: 40),
             ],
           ),
         ),

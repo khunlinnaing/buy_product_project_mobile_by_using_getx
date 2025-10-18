@@ -170,7 +170,7 @@ class ProfileScreen extends StatelessWidget {
                         ),
                       ),
                       child: Text(
-                        controller.isEditing.value ? "Save" : "Update",
+                        controller.isEditing.value ? "".tr : "update".tr,
                         style: const TextStyle(
                           fontSize: 16,
                           color: Colors.white,
