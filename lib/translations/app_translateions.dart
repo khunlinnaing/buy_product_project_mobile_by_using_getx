@@ -88,6 +88,8 @@ class AppTranslations extends Translations {
       'welcome': "Welcome To My App",
       'save': "Save",
       'update': "Update",
+      'total_price': "Total Price",
+      'combine_and_print': "Combine and print",
     },
     'my_MM': {
       'app_name': 'မင်္ဂလာပါ ဤအက်ပ်မှကြိုဆိုပါသည်။',
@@ -176,6 +178,8 @@ class AppTranslations extends Translations {
       'welcome': "ကျွန်ုပ်၏အက်ပ်မှကြိုဆိုပါသည်။",
       'save': "သိမ်းဆည်းမည်။",
       'update': "မွမ်းမံမည်။",
+      'total_price': "စုစုပေါင်း စျေးနှုန်း",
+      'combine_and_print': "ပေါင်းစပ်ပြီး ပုံနှိပ်ပါ။",
     },
   };
 }

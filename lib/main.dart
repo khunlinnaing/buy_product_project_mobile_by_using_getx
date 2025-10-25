@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:provider/provider.dart';
+import 'package:shan_tea_mobile_2/provider/check_provider.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 import 'routes/app_pages.dart';
@@ -16,7 +18,12 @@ void main() async {
   final isDark = prefs.getBool(ThemeService.key) ?? false;
   final themeMode = isDark ? ThemeMode.dark : ThemeMode.light;
 
-  runApp(MyApp(initialLocale: locale, themeMode: themeMode));
+  runApp(
+    ChangeNotifierProvider(
+      create: (context) => CheckProvider(),
+      child: MyApp(initialLocale: locale, themeMode: themeMode),
+    ),
+  );
 }
 
 class MyApp extends StatelessWidget {
